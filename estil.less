@@ -1,0 +1,105 @@
+
+@w : 400px;
+@h : calc(3/4 * @w);
+
+//animation:sprite_moviment infinite 30s linear, sprite_animacion infinite 0.5s steps(3);
+@keyframes farola_moviment {
+    0%{
+        left: 110%;
+    }
+   
+    100%{
+        left: -10%;
+    }
+}
+@keyframes arbre_moviment {
+    0%{
+        left: 120%;
+    }
+    100%{
+        left: -20%;
+    }
+}
+@keyframes sun_moviment {
+    0%{
+        transform: translateX(-50%) translateY( -450%) rotate(0deg);
+    }
+    50%{
+        transform: translateX(-50%) translateY( -450%) rotate(180deg);
+    }
+    100%{
+        transform: translateX(-50%) translateY( -450%) rotate(360deg);
+    }
+}
+
+html{
+    body{
+        background-color: rgb(73, 73, 73);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+        color:white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        overflow: hidden;
+
+        main{
+            background-image: url('./resources/background.png');
+            width: @w;
+            height: @h;
+            position: relative;
+            //overflow: hidden;
+
+            #farola{
+                position: absolute;
+                width: calc(@w / 10);
+                top: 10%;
+                animation:farola_moviment infinite 1s linear ;
+            }
+            #arbre1{
+                position: absolute;
+                top: 40%;
+                width: calc(@w /10) ;
+                animation:arbre_moviment infinite 3s linear;
+            }
+            #arbre2{
+                position: absolute;
+                top: 25%;
+                width: calc(@w /5) ;
+                animation:arbre_moviment infinite 2s linear;
+            }
+
+            #sun{
+                position: absolute;
+                width: calc(@w / 7);
+                top: 90%;
+                left: 50%;
+                //transform: translateX(-50%) translateY( - (@w/2)); //no hem deixa posar px
+                transform: translateX(-50%) translateY( -450%); //no hem deixa posar px
+                transform-origin: 50% 550%;
+
+                animation:sun_moviment infinite 3s linear ;
+
+            }
+
+            // #chasis{
+            //     position: absolute;
+            //     top:calc(50% - calc((@h / 2.1)/2));
+            //     left: calc(50% - calc((@w / 1.4)/2));
+            //     width: calc(@w / 1.4);
+            // }
+            // #back{
+            //     position:absolute;
+            //     width: calc(@w / 7);
+            //     top: 53%;
+            //     left: 23.5%;
+            // }
+            // #front{
+            //     position:absolute;
+            //     width: calc(@w / 10);
+            //     top: 55.5%;
+            //     left: 64.5%;
+            // }
+        }
+    }
+}
