@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
    class="img-fluid"
-   id="outputsvg"
-   style="transform: matrix(3.18135, 0, 0, 3.18135, 0, 0); transform-origin: 50% 50% 0px; cursor: move; transition: none 0s ease 0s;"
-   width="426"
-   height="222"
+   id="noia"
    viewBox="0 0 4260 2220"
    version="1.1"
    sodipodi:docname="noia.svg"
-   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -25,30 +22,30 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      showgrid="false"
-     inkscape:zoom="1.7147274"
-     inkscape:cx="74.355841"
-     inkscape:cy="164.74922"
+     inkscape:zoom="0.21434093"
+     inkscape:cx="2670.9785"
+     inkscape:cy="1210.6881"
      inkscape:window-width="1920"
-     inkscape:window-height="1013"
-     inkscape:window-x="-9"
-     inkscape:window-y="-9"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="outputsvg" />
+     inkscape:current-layer="noia" />
   <path
      d="m 2882.8494,2155.1852 c -30,-37 -49,-82 -49,-116 0,-28 -5,-36 -22,-41 -13,-3 -163,-6 -335,-6 h -258.4771 c -35.5233,-5.2904 -76.236,-17.1207 -112.0911,-61.0227 -22,-44 -21.4318,-88.9773 -23.4318,-208.9773 -2,-102 1,-148 14,-190 23,-77 71,-149 107,-162 17,-5 30,-14 30,-19 1001.1751,-60.6107 580.2282,265.3859 820,511 h 33 c 33,0 67,24 67,48 0,7 5,12 10,12 6,0 10,11 10,23 0,24 -28,57 -47,57 -6,0 -14,27 -18,61 -6,47 -10,59 -22,55 -8,-3 -11,-1 -8,5 4,6 -1,19 -11,30 -14,15 -20,17 -32,6 -13,-9 -14,-9 -8,1 5,9 -9,12 -62,12 -54,0 -72,-4 -83,-17 z m 120,-99 c 13,-16 21,-41 21,-64 0,-31 -8,-47 -48,-90 -82,-89 -101,-93 -422,-99 l -275,-6 -3,-45 c -4,-50 13,-70 59,-70 33,0 38,-12 46,-110 l 6,-76 -37,-32 c -20,-18 -44,-32 -52,-32 -43,0 -101,56 -108,104 -3,17 -8,47 -11,66 -19,116 -25,205 -15,236 21,64 23,64 350,64 162,0 310,4 328,9 41,12 69,45 76,94 7,39 32,77 52,77 7,0 22,-12 33,-26 z m -139.2282,-636.2964 c -1909.0808,-946.59253 -954.5404,-473.29627 0,0 z"
      id="path10548"
      style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#2e228b;fill-opacity:1;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
      sodipodi:nodetypes="cscscccccccsssssccccccsccsccccscccscccsccsccc" />
   <path
-     id="ptflHKJbJ"
+     id="brac2"
      d="m 2959.1592,2115.5045 c -28,-11 -50,-42 -56,-80 -7,-49 -34,-82 -76,-94 -18,-5 -167.1327,-15.5973 -331,-9 0,0 -179.312,30.0097 -265.8863,10.7046 -24.4961,-5.4624 -54.6554,-23.1364 -66.8183,-34.7046 -13.3216,-12.6702 -16.2954,-40 -20.2954,-60 -6,-34 6,-188 21,-276 3,-19 8,-49 11,-66 6,-40 40,-79 85,-98 47,-20 103,-7 142,32 28,28 29,34 28,103 -1,39 -3,82 -6,93 -15,76 -15,76 -43,76 -37,0 -67,22 -59,44 6,14 34,16 262,16 231,0 261,2 317,21 49,16 73,32 108,69 32,35 56,50 83,55 45,9 47,19 6,34 -29,10 -31,13 -26,47 12,75 -51,140 -113,117 z"
      sodipodi:nodetypes="cccsssccccsccscscccccc"
      style="fill:#e2f0ca" />
   <g
-     id="g11633"
-     transform="rotate(6.499721,2906.4268,1424.2003)"
-     inkscape:transform-center-x="-589.35058"
-     inkscape:transform-center-y="113.84462">
+     id="brac"
+     transform="rotate(6.499721,2906.4265,1424.2009)"
+     inkscape:transform-center-x="-589.35064"
+     inkscape:transform-center-y="113.84465">
     <path
        d="m 2891.035,1427.8966 c 0,16 -77.5155,4.7336 -68.6423,6.2386 77.8528,13.2049 223.2916,25.9981 215.3248,25.2707 151.5656,10.5769 353.9193,12.1228 445.0511,8.6362 90.808,-16.2686 186.733,-31.2404 251.8573,-56.225 83,-32 343,-65 361,-47 4,4 8,50 8,101 l 1,95 -35,36 c -19,20 -44,41 -55,47 -30,17 -231,58 -310,64 -38,3 -92,7 -120,10 -27,2 -167,7 -310,10 -150,4 -498.8949,-17.921 -505.8949,-12.921 -8,6 5.886,-51.6913 5.886,-16.6913"
        style="font-variation-settings:normal;vector-effect:none;fill:#2e228b;fill-opacity:1;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
@@ -61,7 +58,7 @@
        style="fill:#e2f0ca" />
   </g>
   <g
-     id="g11576"
+     id="cap"
      transform="rotate(0.73544793,2573.9103,2076.0554)"
      inkscape:transform-center-x="902.04558"
      inkscape:transform-center-y="-646.53816">

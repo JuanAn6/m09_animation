@@ -1,5 +1,5 @@
 
-@w : 400px;
+@w : 300px; 
 @h : calc(3/4 * @w);
 
 //animation:sprite_moviment infinite 30s linear, sprite_animacion infinite 0.5s steps(3);
@@ -7,7 +7,6 @@
     0%{
         left: 110%;
     }
-   
     100%{
         left: -10%;
     }
@@ -31,6 +30,123 @@
         transform: translateX(-50%) translateY( -450%) rotate(360deg);
     }
 }
+@keyframes moon_moviment {
+    0%{
+        transform: translateX(-50%) translateY( 450%) rotate(0deg);
+    }
+    50%{
+        transform: translateX(-50%) translateY( 450%) rotate(180deg);
+    }
+    100%{
+        transform: translateX(-50%) translateY( 450%) rotate(360deg);
+    }
+}
+@keyframes wheel_moviment {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes cotxe_moviment {
+    0%{
+        left: 0 ;
+    }
+    50%{
+        left: 2%;
+    }
+    100%{
+        left: 0 ;
+    }
+}
+@keyframes cap_moviment {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(5deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+@keyframes brac_moviment {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(5deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+@keyframes noia_moviment {
+    0%{
+        top: calc(75% - calc((@w / 4.5))); 
+    }
+    50%{
+        top: calc(75% - calc((@w / 4.5)) + 0.5%);
+    }
+    100%{
+        top: calc(75% - calc((@w / 4.5)));
+    }
+}
+@keyframes color_filter {
+    0%{
+        filter: grayscale(0%);
+    }
+    25%{
+        filter: grayscale(0%);
+    }
+    50%{
+        filter: grayscale(80%);
+    }
+    75%{
+        filter: grayscale(80%);
+    }
+    100%{
+        filter: grayscale(0%);
+    }
+}
+
+@keyframes batxe_moviment {
+    0%{
+        top: 54.5%;
+    }
+    80%{
+        top: 54.5%;
+    }
+    85%{
+        top: 55.5%;
+    }
+    90%{
+        top: 54.5%;
+    }
+    100%{
+        top: 54.5%;
+    }
+}
+
+@keyframes batxe_noia_moviment{
+    0%{
+        top: calc(75% - calc((@w / 4.5)));
+    }
+    85%{
+        top: calc(75% - calc((@w / 4.5)));
+    }
+    90%{
+        top: calc(75% - calc((@w / 4.5)) + 1%);
+    }
+    95%{
+        top: calc(75% - calc((@w / 4.5)));
+    }
+    100%{
+        top: calc(75% - calc((@w / 4.5)));
+    }
+}
 
 html{
     body{
@@ -45,26 +161,29 @@ html{
 
         main{
             background-image: url('./resources/background.png');
+
+            background-size: contain;
             width: @w;
             height: @h;
             position: relative;
-            //overflow: hidden;
+            overflow: hidden;
+            animation: color_filter 5s infinite linear;
 
             #farola{
                 position: absolute;
                 width: calc(@w / 10);
-                top: 10%;
+                top: calc(30% - calc( @w / 10));
                 animation:farola_moviment infinite 1s linear ;
             }
             #arbre1{
                 position: absolute;
-                top: 40%;
+                top: 43%;
                 width: calc(@w /10) ;
                 animation:arbre_moviment infinite 3s linear;
             }
             #arbre2{
                 position: absolute;
-                top: 25%;
+                top: 27%;
                 width: calc(@w /5) ;
                 animation:arbre_moviment infinite 2s linear;
             }
@@ -78,28 +197,73 @@ html{
                 transform: translateX(-50%) translateY( -450%); //no hem deixa posar px
                 transform-origin: 50% 550%;
 
-                animation:sun_moviment infinite 3s linear ;
+                animation:sun_moviment infinite 5s linear ;
 
             }
+            #moon{
+                position: absolute;
+                width: calc(@w / 7);
+                top: 90%;
+                left: 50%;
+                //transform: translateX(-50%) translateY( - (@w/2)); //no hem deixa posar px
+                transform: translateX(-50%) translateY( 450%); //no hem deixa posar px
+                transform-origin: 50% -400%;
 
-            // #chasis{
-            //     position: absolute;
-            //     top:calc(50% - calc((@h / 2.1)/2));
-            //     left: calc(50% - calc((@w / 1.4)/2));
-            //     width: calc(@w / 1.4);
-            // }
-            // #back{
-            //     position:absolute;
-            //     width: calc(@w / 7);
-            //     top: 53%;
-            //     left: 23.5%;
-            // }
-            // #front{
-            //     position:absolute;
-            //     width: calc(@w / 10);
-            //     top: 55.5%;
-            //     left: 64.5%;
-            // }
+                animation: moon_moviment infinite 5s linear ;
+            }
+        
+            .cotxe{
+                position:relative;
+                width: 100%;
+                height: 100%;
+                animation:cotxe_moviment infinite 3s linear;
+            }
+
+            #chasis{
+                position: absolute;
+                width: calc(@w / 1.4);
+                top: 54.5%;
+                left: calc(50% - calc((@w / 1.4)/2));
+                animation: batxe_moviment infinite 1s linear;
+            }
+            #back{
+                position:absolute;
+                width: calc(@w / 8);
+                top: calc(75% - calc((@w / 8)/9));
+                left: 24.5%;
+                animation: wheel_moviment infinite 0.5s linear;
+            }
+            #front{
+                position:absolute;
+                width: calc(@w / 8);
+                top: calc(75% - calc((@w / 8)/9));
+                left: 63.5%;
+                animation: wheel_moviment infinite 0.5s linear;
+                
+            }
+            #noia{
+                position:absolute;
+                width: calc(@w / 3);
+                top: calc(75% - calc((@w / 4.5)));
+                left: 23%;
+
+                animation: noia_moviment infinite 0.7s linear, batxe_noia_moviment infinite 1s linear;
+
+                #brac{
+                    transform-origin:  60% 90%;
+                    //animation: brac_moviment infinite 2s cubic-bezier(0, 0.77, 0.14, 0.9);
+                    animation: brac_moviment infinite 3s ;
+                }
+
+                #brac2{
+                    z-index: 1; //??? no funciona
+                }
+                
+                #cap{
+                    transform-origin:  60% 90%;
+                    animation: cap_moviment infinite 2s linear; 
+                }
+            }
         }
     }
 }

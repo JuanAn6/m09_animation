@@ -9,9 +9,17 @@
 <body>
     <main>
         <?php include('./resources/sun.svg');?>
+        <?php include('./resources/moon.svg');?>
         <?php include('./resources/tree.svg');?>
         <?php include('./resources/tree2.svg');?>
         <?php include('./resources/postlight.svg');?>
+
+        <div class="cotxe">
+            <?php include('./resources/noia.svg');?>
+            <?php include('./resources/chasis.svg');?>
+            <?php include('./resources/back_wheel.svg');?>
+            <?php include('./resources/front_wheel.svg');?>
+        </div>
         
     </main>
 </body>
