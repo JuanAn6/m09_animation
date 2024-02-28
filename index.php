@@ -15,8 +15,8 @@
         <?php include('./resources/postlight.svg');?>
 
         <div class="cotxe">
-            <?php include('./resources/noia.svg');?>
             <?php include('./resources/chasis.svg');?>
+            <?php include('./resources/noia.svg');?>
             <?php include('./resources/back_wheel.svg');?>
             <?php include('./resources/front_wheel.svg');?>
         </div>
