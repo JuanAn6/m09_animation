@@ -206,6 +206,7 @@ html body main #chasis {
   top: 54.5%;
   left: calc(50% - calc((300px / 1.4)/2));
   animation: batxe_moviment infinite 1s linear;
+  z-index: 1;
 }
 html body main #back {
   position: absolute;
@@ -231,9 +232,12 @@ html body main #noia {
 html body main #noia #brac {
   transform-origin: 60% 90%;
   animation: brac_moviment infinite 3s ;
+  position: relative;
+  z-index: 0;
 }
 html body main #noia #brac2 {
-  z-index: 1;
+  position: relative;
+  z-index: 2;
 }
 html body main #noia #cap {
   transform-origin: 60% 90%;
